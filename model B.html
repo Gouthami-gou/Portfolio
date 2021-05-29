@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+      <button data-target="#factset" data-toggle="modal">Create an Account</button>
+<div class="modal" id="factset">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p>Login</p>
+                <button class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+<!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut vel hic soluta quaerat iure repellendus minima voluptatem at praesentium.</p> -->
+<form novalidate>
+    <div class="form-inline form-group">
+    <input class="form-control" type="text" placeholder="firstname" required="">
+    <small class="invalid-feedback">Enter a valid username</small>
+    <input class="form-control ml-1 w-50" type="text" placeholder="lastname">
+</div>
+<div class="form-group">
+    <input class="form-control" type="password" placeholder="Enter Password" required="">
+    <small class="invalid-feedback">Enter a valid password</small>
+</div>
+<div class="form-group">
+    <input class="form-control" type="text" placeholder="Mobile number">
+</div>
+<div>
+    <label>Gender</label>
+    <div class="form-check-inline">
+    <input class="form-check-input" type="radio" name="" id="">
+    <label class="form-check-label" for="">Male</label>
+</div>
+<div class="form-check-inline">
+    <input class="form-check-input" type="radio" name="" id="">
+    <label class="form-check-label" for="">Female</label>
+</div>
+</div>
+<div class="form-check">
+<input class="form-check-input" type="checkbox">
+<label class="form-check-label" for="">RememberMe</label>
+</div>
+<div class="form-group">
+<input  type="submit" value="Login">
+</div>
+</form>           
+
+
+
+
+</div>
+        </div>
+    </div>
+</div>
+<script>
+    var a1=document.querySelector('form');
+    a1.addEventListener('submit',function(e){
+       
+        e.preventDefault();
+        if(a1.checkValidity()===false){
+          
+            e.stopPropagation();
+        }
+     
+    a1.classList.add('was-validated');
+    })
+</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

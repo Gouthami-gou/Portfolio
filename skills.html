@@ -8,6 +8,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"  
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+  
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -53,10 +56,24 @@
     </nav>
 <br>
     
+  
+
+
+
 <section class="ftco-section ftco-no-pb goto-here" id="resume-section">
     <div class="container">
           <div id="page-3" class= "page three">
-            <h2 class="heading">Skills</h2>
+            <h2 class="heading text-center">Skills <button data-target="#factset" data-toggle="modal"style="font-size:medium;float: right;text-shadow: azure;">Sign In Here to practise</button></a></h2><br>
+            <div class="row">
+              <div class="col-md-2"><a href="https://www.w3schools.com/html/default.asp"><img src="images/html5.png"></a></div>
+              <div class="col-md-2"><a href="https://www.w3schools.com/css/default.asp"><img src="images/css.png"></a></div>
+              <div class="col-md-2"><a href="https://www.w3schools.com/js/default.asp"><img src="images/js.png"></a></div>
+              <div class="col-md-2"><a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp"><img src="images/bootstrap.png"></a></div>
+              <div class="col-md-2"><a href="https://www.w3schools.com/nodejs/default.asp"><img src="images/node.png"></a></div>
+              <div class="col-md-2"><a href="https://www.w3schools.in/category/mongodb/"><img src="images/mongodb.png"></a></div>
+              
+              </div><br>
+              
            
             <div class="row">
               <div class="col-md-6 animate-box">
@@ -105,7 +122,7 @@
               </div>
               <div class="col-md-6 animate-box">
                 <div class="progress-wrap ftco-animate">
-                  <h3>jquery</h3>
+                  <h3>Bootstrap</h3>
                   <div class="progress">
                      <div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
                       aria-valuemin="0" aria-valuemax="100" style="width:70%">
@@ -134,6 +151,49 @@
   </section>
 <br>
 
+<div class="modal" id="factset" >
+  <div class="modal-dialog" >
+      <div class="modal-content" style="background-image: linear-gradient(pink,white);">
+          <div class="modal-header">
+              <p>Login</p>
+              <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+<!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut vel hic soluta quaerat iure repellendus minima voluptatem at praesentium.</p> -->
+<form novalidate >
+  <div class="form-inline form-group">
+  <input class="form-control" type="text" placeholder="firstname" required="">
+  <small class="invalid-feedback">Enter a valid username</small>
+  <input class="form-control ml-1 w-50" type="text" placeholder="lastname">
+</div>
+<div class="form-group">
+  <input class="form-control" type="password" placeholder="Enter Password" required="">
+  <small class="invalid-feedback">Enter a valid password</small>
+</div>
+<div class="form-group">
+  <input class="form-control" type="text" placeholder="Mobile number">
+</div>
+<div>
+  <label>Gender</label>
+  <div class="form-check-inline">
+  <input class="form-check-input" type="radio" name="" id="">
+  <label class="form-check-label" for="">Male</label>
+</div>
+<div class="form-check-inline">
+  <input class="form-check-input" type="radio" name="" id="">
+  <label class="form-check-label" for="">Female</label>
+</div>
+</div>
+<div class="form-check">
+<input class="form-check-input" type="checkbox">
+<label class="form-check-label" for="">RememberMe</label>
+</div>
+<div class="form-group text-center">
+<input  type="submit" value="Login" class="btn btn bg-success" >
+</div>
+</form>           
+
+</div></div></div>
 <!-- Footer -->
 <footer class="page-footer font-small special-color-dark pt-4 bg-success">
 
