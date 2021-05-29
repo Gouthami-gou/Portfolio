@@ -1,22 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleCSS.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
     <link href="https://fonts.googleapis.com/css?family=Audiowide|Caveat+Brush|Marck+Script|Shojumaru" rel="stylesheet">
     <title>Code Editor</title>
 </head>
+
 <body>
     <div class="container">
-        <h1><button class="btn btn-primary">Go Back</button>Real Time Editor for Web Development <span class="author">- Gouthami </span></h1>
-		
-        <textarea id="html"onfocus="this.value=''; setbg1('#e6ffff');" onblur="setbg1('white')" placeholder="HTML Here..."></textarea>
-        <textarea id="css" onfocus="this.value=''; setbg2('#e6ffff');" onblur="setbg2('white')" placeholder="CSS Here..."></textarea>
-        <textarea id="js" onfocus="this.value=''; setbg3('#e6ffff');" onblur="setbg3('white')" placeholder="JavaScript Here..."></textarea>
+        <div class="row">
+            <div class="col-md-1"><button class="btn btn-warning">Go Back</button></div>
+            <div class="col-md-11">
+                <h2>Real Time Editor for Web Development <span class="author">- Gouthami </span></h2>
+            </div>
+        </div>
+
+
+        <textarea id="html" onfocus="this.value=''; setbg1('#e6ffff');" onblur="setbg1('white')"
+            placeholder="HTML Here..."></textarea>
+        <textarea id="css" onfocus="this.value=''; setbg2('#e6ffff');" onblur="setbg2('white')"
+            placeholder="CSS Here..."></textarea>
+        <textarea id="js" onfocus="this.value=''; setbg3('#e6ffff');" onblur="setbg3('white')"
+            placeholder="JavaScript Here..."></textarea>
         <iframe id="code"></iframe>
         <script type="text/javascript" src="script.js"></script>
-    </div>  
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    </div>
 </body>
+
 </html>
