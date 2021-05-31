@@ -69,4 +69,28 @@ body .no-padding{
     opacity: 0.7;
     z-index: -1;
   }
+
+  .scroll_to_top {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+  
+    position: fixed;
+    content: '';
+    cursor: pointer;
+    background-size: 50px;
+  
+    width: 50px;
+    height: 50px;
+    background-image: url('https://cdn1.iconfinder.com/data/icons/ui-6/502/up-128.png');
+    bottom: 50px;
+    right: 100px;
+  
+    opacity: 0;
+  }
+  
+  .scroll_to_top.appear {
+    opacity: 0.5;
+  }
   

@@ -125,9 +125,11 @@
 
           <div class="section-heading text-center animate">
             <div class="animate__bounceOutDown" data-wow-delay="0.2s">
-              <h2 class="text-center animate__animated animate__slideInLeft">Hi! am Gouthami</h2>
+              <h2 class="text-center animate__animated animate__slideInLeft" style="padding-left: 340px;">Hi! am
+                Gouthami</h2>
             </div>
-            <p class="animate__animated animate__slideInRight text-center" data-wow-delay="0.3s">Laugh like a Baby, Live
+            <p class="animate__animated animate__slideInRight text-center" data-wow-delay="0.3s"
+              style="padding-left: 340px;">Laugh like a Baby, Live
               like a Queen</p>
           </div>
 
@@ -162,36 +164,63 @@
   <div class="row animate__animated animate__bounce">
     <div class="col-sm-3">
       <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-outline-danger">Go somewhere</a>
+        <div class="card-body"
+          style="background-image: url(https://cdn.pixabay.com/photo/2020/05/24/23/37/airplane-5216583__340.jpg);">
+          <h5 class="card-title" style="color:rgb(20, 34, 2);">Checkins</h5>
+          <p class="card-text">
+            <li class="fa fa-arrow-right">&nbsp;&nbsp;<a href="">Mumbai</a></li><br>
+            <li class="fa fa-arrow-right">&nbsp;&nbsp;<a href="">Banglore</a></li><br>
+            <li class="fa fa-arrow-right">&nbsp;&nbsp;<a href="">Chennai</a></li><br>
+            <li class="fa fa-arrow-right">&nbsp;&nbsp;<a href="">Kerala</a></li>
+
+          </p>
+          <a href="#" class="btn btn-outline-danger">Read More</a>
         </div>
       </div>
     </div>
     <div class="col-sm-3">
       <div class="card">
-        <div class="card-body">
-          <h5 class="card-title text-shadow">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <div class="card-body"
+          style="background-image: url(https://cdn.pixabay.com/photo/2016/11/21/14/12/books-1845614__340.jpg);">
+          <h5 class="card-title text-shadow" style="color:rgb(20, 34, 2);">Books I read Most</h5>
+          <p class="card-text">
+            <li class="fa fa-arrow-right">&nbsp;&nbsp;<a href="">Wings of Fire</a></li><br>
+            <li class="fa fa-arrow-right">&nbsp;&nbsp;<a href="">Turning Points</a></li><br>
+            <li class="fa fa-arrow-right">&nbsp;&nbsp;<a href="">The Little Prince.</a></li><br>
+            <li class="fa fa-arrow-right">&nbsp;&nbsp;<a href="">A Tale of Two Cities.</a></li>
+
+          </p>
           <a href="#" class="btn btn-outline-danger">Read more</a>
         </div>
       </div>
     </div>
     <div class="col-sm-3">
       <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <div class="card-body"
+          style="background-image: url(https://cdn.pixabay.com/photo/2019/02/27/18/23/india-4024661__340.jpg);">
+          <h5 class="card-title" style="color:rgb(20, 34, 2);">Most Inspiring People</h5>
+          <p class="card-text">
+            <li class="fa fa-arrow-right">&nbsp;&nbsp;<a href="">Mahatma Gandhi</a></li><br>
+            <li class="fa fa-arrow-right">&nbsp;&nbsp;<a href="">Mother Theresa</a></li><br>
+            <li class="fa fa-arrow-right">&nbsp;&nbsp;<a href="">Dr.BR.Ambedkar</a></li><br>
+            <li class="fa fa-arrow-right">&nbsp;&nbsp;<a href="">Abdul Kalam</a></li>
+          </p>
           <a href="#" class="btn btn-outline-danger">Read more</a>
         </div>
       </div>
     </div>
     <div class="col-sm-3">
       <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <div class="card-body"
+          style="background-image: url(https://cdn.pixabay.com/photo/2016/02/15/11/43/running-track-1201014__340.jpg);">
+          <h5 class="card-title" style="color:rgb(20, 34, 2);">Sports I like Most</h5>
+          <p class="card-text">
+            <li class="fa fa-arrow-right">&nbsp;&nbsp;<a href="">Badminton</a></li><br>
+            <li class="fa fa-arrow-right">&nbsp;&nbsp;<a href="">Cricket</a></li><br>
+            <li class="fa fa-arrow-right">&nbsp;&nbsp;<a href="">Chess</a></li><br>
+            <li class="fa fa-arrow-right">&nbsp;&nbsp;<a href="">Volley Ball</a></li>
+
+          </p>
           <a href="#" class="btn btn-outline-danger"> Read more</a>
         </div>
       </div>
@@ -305,7 +334,30 @@
     </a>
   </div>
   <br>
-  <footer class="page-footer font-small special-color-dark pt-4" style="background-image: linear-gradient(#c31432,#240b36);">
+  <script>
+
+    function init() {
+      var btn = document.createElement('button')
+      btn.className = "scroll_to_top"
+      btn.id = 'scroll_to_top_btn'
+      document.body.appendChild(btn)
+
+      btn.addEventListener('click', () => {
+        window.scrollTo(0, 0)
+      })
+    }
+
+
+    document.addEventListener('scroll', () => {
+      var btn = document.getElementById('scroll_to_top_btn')
+
+      btn.className = window.scrollY > 200 ? 'scroll_to_top appear' : 'scroll_to_top'
+    })
+
+
+    init()</script>
+  <footer class="page-footer font-small special-color-dark pt-4"
+    style="background-image: linear-gradient(#c31432,#240b36);">
 
     <!-- Footer Elements -->
     <div class="container">
